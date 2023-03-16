@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <title>Document</title>
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -25,25 +26,25 @@
           >
 
           <ul class="nav-list list">
-            <li class="item">
-              <a href="./index.html" class="link">Studio</a>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link link under-line">Studio</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
             </li>
-            <li class="item">
-              <a href="" class="link">Contacts</a>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="address-header">
           <ul class="auth-nav list">
-            <li class="item">
+            <li class="auth-item">
               <a href="mailto:info@devstudio.com" class="address-list link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="auth-item">
               <a href="tel:+110001111111" class="address-list link"
                 >+11 (000) 111-11-11</a
               >
@@ -58,7 +59,9 @@
       <section class="page-hero section">
         <div class="containet">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -415,5 +418,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
